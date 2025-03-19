@@ -4,13 +4,16 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
+html, body{
+    min-height: 100%;
+}
 /* Header and Navigation */
 header {
-    background-color: #333;
+    background-color: #ffffff;
     padding: 1rem;
     position: relative;
     z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 nav{
@@ -19,6 +22,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .logo {
@@ -36,19 +40,19 @@ nav{
 }
 
 .nav-menu a {
-    color: white;
+    color: rgb(26, 24, 24);
     text-decoration: none;
     font-size: 1.1rem;
 }
 
 .nav-menu a:hover {
-    color: #ddd;
+    color: #d61b1b;
 }
 
 .hamburger {
     display: none;
     cursor: pointer;
-    color: white;
+    color: rgb(123, 11, 11);
     font-size: 1.5rem;
 }
 
@@ -194,9 +198,9 @@ button:hover {
 }
 
 /* Footer */
-.site-footer {
-    background-color: #333;
-    color: white;
+footer {
+    background-color: #d3caca;
+    color: rgb(0, 0, 0);
     padding: 2rem 1rem;
     text-align: center;
 }
@@ -214,30 +218,16 @@ button:hover {
 }
 
 .footer-section h3 {
-    color: #fff;
+    /* color: #fff; */
     margin-bottom: 1rem;
 }
 
 .footer-section p {
     margin: 0.5rem 0;
 }
-
-.social-links {
-    list-style: none;
-    padding: 0;
-}
-
-.social-links li {
-    margin: 0.5rem 0;
-}
-
-.social-links a {
-    color: #fff;
+.footer-section a {
+    color: black;
     text-decoration: none;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
 }
 
 .footer-bottom {
@@ -251,7 +241,51 @@ button:hover {
     font-size: 0.9rem;
 }
 
+/* end of footer */
 
+/* book-insights */
+.insights-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .book-section {
+    margin-bottom: 2rem;
+  }
+
+  .book-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+
+  .hadith {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-left: 4px solid #333;
+    background-color: #f9f9f9;
+  }
+
+  .hadith p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0.5rem 0;
+  }
+
+  .hadith .arabic {
+    font-size: 20px;
+    direction: rtl;
+    color: #000;
+  }
+
+  .hadith .reference {
+    font-style: italic;
+    color: #777;
+  }
+
+  /* end of book-insights */
 
 .logo img {
     width: 100px;
@@ -264,7 +298,6 @@ button:hover {
 /* ******* */
 a:hover, a:focus {
     color: #003366;
-    outline: 2px solid #0066cc; /* Keyboard focus */
 }
 
 
@@ -280,7 +313,7 @@ a:hover, a:focus {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #333;
+        background-color: #d3caca;
         flex-direction: column;
         padding: 1rem 0;
         z-index: 999
